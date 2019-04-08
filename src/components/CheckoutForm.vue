@@ -1,11 +1,7 @@
 <template>
   <div>
     <h2>CheckoutForm-Component</h2>
-    <input
-      @input="checkForm"
-      v-model="name"
-      placeholder="Name"
-      type="text" />
+    <input @input="checkForm" v-model="name" placeholder="Name" type="text" />
     <input @input="checkForm" v-model="password" placeholder="Passwort" type="password" />
 
     <div>isFormValid: {{ getIsFormValid }}</div>
